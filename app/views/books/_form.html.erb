@@ -1,0 +1,9 @@
+<%= form_with(model: book, local: true) do |form| %>
+    <div><%= form.label :title, value: "Title" %></div>
+    <div><%= form.text_field :title, id: :book_title %></div>
+    <div><%= form.label :content, value:"Content" %></div>
+    <div><%= form.text_area :content, rows: 4, id: :book_content %></div>
+    <div><%= form.label :author, value:"Author" %></div>
+    <div><%= form.text_field :author, id: :book_author %></div>
+    <div><%= form.submit%></div>
+<% end %>
